@@ -1,6 +1,9 @@
 #ifndef STRUCTURES_H
 #define STRUCTURES_H
 
+#define LECRAN 1000
+#define HECRAN 800
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
