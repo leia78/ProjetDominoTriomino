@@ -18,7 +18,7 @@ int main (void)
                 continuer = 0;
                 break;
             default:
-                ecran = SDL_SetVideoMode(1200, 800, 32, SDL_HWSURFACE | SDL_DOUBLEBUF);
+                ecran = SDL_SetVideoMode(LECRAN, HECRAN, 32, SDL_HWSURFACE | SDL_DOUBLEBUF);
                 accueil(ecran);
                 break;
         }
