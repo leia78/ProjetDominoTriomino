@@ -23,7 +23,7 @@ typedef struct{
 typedef struct{
 	int victoireDom;	//nb victoires au jeu des dominos
 	int scoreTri;  //meilleur score au jeu des triominos
-	
+	char *pseudo;
 }joueur;
 
 
