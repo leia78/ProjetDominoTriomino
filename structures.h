@@ -16,7 +16,7 @@
 
 
 typedef struct{
-    int **number;
+    int *number;
     SDL_Rect pos;
 }piece;
 
