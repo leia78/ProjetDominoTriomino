@@ -9,7 +9,6 @@ void distribution_2J(piece domino, piece* domJ1, piece* domJ2, piece* pioche);
 int main()
 {
 	piece domino;
-	int i, j,b, a,c;
 	piece domJ1, domJ2, domJ3, domJ4, pioche;
 	
 	srand(time(NULL));
