@@ -1,6 +1,5 @@
 #include "structures.h"
 
-
 void alloc_jeu(piece** trio);
 void alloc_joueurs(piece** trio);
 void init_pieces( piece** trio);
@@ -33,58 +32,7 @@ int main()
 	init_trioJ(&trioJ4);
 	init_trioJ(&trioP);
 	
-	
 	distribution(3, &trio, &trioJ1,  &trioJ2,  &trioJ3,  &trioJ4, &trioP);
-	
-	
-	
-	for(i=0;i<9;i++)
-	{
-		for(j=0;j<3;j++)
-		{
-			printf("  %d	",trioJ1[i].number[j]);
-		}
-		printf("\n");
-	}
-	printf("\n");
-	for(i=0;i<9;i++)
-	{
-		for(j=0;j<3;j++)
-		{
-			printf("  %d	",trioJ2[i].number[j]);
-		}
-		printf("\n");
-	}
-	printf("\n");
-	for(i=0;i<8;i++)
-	{
-		for(j=0;j<3;j++)
-		{
-			printf("  %d	",trioJ3[i].number[j]);
-		}
-		printf("\n");
-	}
-	printf("\n");
-	for(i=0;i<8;i++)
-	{
-		for(j=0;j<3;j++)
-		{
-			printf("  %d	",trioJ4[i].number[j]);
-		}
-		printf("\n");
-	}
-	printf("\n");
-	
-	for(i=0;i<40;i++)
-	{
-		printf("i: %d", i);
-		for(j=0;j<3;j++)
-		{
-			printf("  %d	",trioP[i].number[j]);
-		}
-		printf("\n");
-	}
-	
 	
 	return 0;
 		
