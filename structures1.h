@@ -33,4 +33,16 @@ void nb_joueur(SDL_Surface *ecran);
 void board_d(SDL_Surface *ecran);
 void melange(int nbjoueur,piece *p);
 
+void alloc_jeu(piece** trio);
+void alloc_joueurs(piece** trio);
+void init_pieces( piece** trio);
+void init_trioJ( piece** trio);
+void hasard( int* melange);
+void distribution(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioJ3, piece** trioJ4, piece** trioP);
+void distribution_2J(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioP);
+void distribution_3_4J(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioJ3, piece** trioJ4, piece** trioP);
+void renomme_joueur(piece** jJoue, int jCommence, piece* trioJ1, piece* trioJ2, piece* trioJ3, piece* trioJ4,
+					int *score, int *j1, int *j2, int *j3, int *j4);
+int calc_score(piece *trio, int i);
+
 #endif
