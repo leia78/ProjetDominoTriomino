@@ -1,5 +1,5 @@
 #include "structures.h"
-int nbjoueur=2;
+extern int nbjoueur;
 
 void alloc_jeu(piece** trio);
 void alloc_joueurs(piece** trio);
@@ -13,7 +13,7 @@ void renomme_joueur(piece** jJoue, int jCommence, piece* trioJ1, piece* trioJ2, 
 					int *score, int *j1, int *j2, int *j3, int *j4);
 int calc_score(piece *trio, int i);
 
-int main()
+int init_triomino()
 {
 	piece* trio = NULL;
 	piece *trioJ1 = NULL, *trioJ2 = NULL, *trioJ3 = NULL, *trioJ4 = NULL, *trioP = NULL;
