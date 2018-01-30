@@ -1,19 +1,7 @@
 #include "structures.h"
 extern int nbjoueur;
 
-void alloc_jeu(piece** trio);
-void alloc_joueurs(piece** trio);
-void init_pieces( piece** trio);
-void init_trioJ( piece** trio);
-void hasard( int* melange);
-void distribution(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioJ3, piece** trioJ4, piece** trioP);
-void distribution_2J(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioP);
-void distribution_3_4J(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioJ3, piece** trioJ4, piece** trioP);
-void renomme_joueur(piece** jJoue, int jCommence, piece* trioJ1, piece* trioJ2, piece* trioJ3, piece* trioJ4,
-					int *score, int *j1, int *j2, int *j3, int *j4);
-int calc_score(piece *trio, int i);
-
-int init_triomino()
+void init_triomino()
 {
 	piece* trio = NULL;
 	piece *trioJ1 = NULL, *trioJ2 = NULL, *trioJ3 = NULL, *trioJ4 = NULL, *trioP = NULL;
@@ -63,10 +51,7 @@ int init_triomino()
 	// 			pose pion + marque le score ou perte 10pts
 	
 	// faire ca tant que les joueurs ont des pions ou que la pioche soit vide 
-	// et que les joueurs ne puisse plus jouer.
-		
-	return 0;
-		
+	// et que les joueurs ne puisse plus jouer.	
 }
 
 void alloc_jeu(piece** trio)
