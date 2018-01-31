@@ -161,7 +161,7 @@ void distribution(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioJ3, 
 //9 si 2 joueur 7 si plus 
 void distribution_2J(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioP)
 {
-	int a=0,i,b=0, melange[56];
+	int a=0,i,b=0,e=0, melange[56];
 	hasard(melange);
 	i=0;
 	do
@@ -176,12 +176,20 @@ void distribution_2J(piece** trio, piece** trioJ1, piece** trioJ2, piece** trioP
 		else if(i%2==1)
 		{
 			(*trioJ2)[b].number[0]= (*trio)[melange[i]].number[0];
-			(*trioJ2)[b].number[1]= (*trio)[melange[i]].number[1];
 			(*trioJ2)[b].number[2]= (*trio)[melange[i]].number[2];
+			(*trioJ2)[b].number[3]= (*trio)[melange[i]].number[3];
 			b++;
 		}
 		i++;
 	} while((a<9)||(b<9));
+	
+	for(i=i;i<56;i++)
+	{
+		(*trioP)[e].number[0]= (*trio)[melange[i]].number[0];
+		(*trioP)[e].number[2]= (*trio)[melange[i]].number[2];
+		(*trioP)[e].number[3]= (*trio)[melange[i]].number[3];
+		e++;
+	}
 	
 }
 
